@@ -1,0 +1,42 @@
+<!-- Formulario de inicio de sesión. Envía las credenciales a login.php. -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="#">Login</a>
+            <!--<a href="admin.html">Admin Dashboard</a>-->
+        </nav>
+        <div class="hero">
+            <form class="login-container" action="login.php" method="post">
+                <h2>Iniciar sesión</h2>
+                <div
+                    id="error-message"
+                    style="color: red; margin-bottom: 10px"
+                ></div>
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" />
+                <label for="contrasena">Contraseña</label>
+                <input
+                    type="password"
+                    id="contrasena"
+                    name="contrasena"
+                    required
+                />
+                <button type="submit">Ingresar</button>
+                <p>
+                    ¿No tienes cuenta?
+                    <a href="register.html">Registrate aquí</a>
+                </p>
+            </form>
+        </div>
+        <script src="js/login.js"></script>
+        <footer></footer>
+    </body>
+</html>

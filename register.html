@@ -1,0 +1,61 @@
+<!-- Formulario de registro de nuevos usuarios. Envía los datos a register.php. -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="#">Login</a>
+        </nav>
+        <div class="hero">
+            <form class="login-container" action="register.php" method="post">
+                <h2>Registrarse</h2>
+                <div
+                    id="error-message"
+                    style="color: red; margin-bottom: 10px"
+                ></div>
+
+                <label for="usuario">Usuario</label>
+                <input
+                    type="text"
+                    id="usuario"
+                    name="usuario"
+                    required
+                    minlength="3"
+                />
+
+                <label for="contrasena">Contraseña</label>
+                <input
+                    type="password"
+                    id="contrasena"
+                    name="contrasena"
+                    required
+                    minlength="6"
+                />
+
+                <label for="contrasena_confirmar">Confirmar Contraseña</label>
+                <input
+                    type="password"
+                    id="contrasena_confirmar"
+                    name="contrasena_confirmar"
+                    required
+                    minlength="6"
+                />
+
+                <button type="submit">Registrarse</button>
+
+                <p>
+                    ¿Ya tienes cuenta?
+                    <a href="login.html">Inicia sesión aquí</a>
+                </p>
+            </form>
+        </div>
+        <script src="js/register.js"></script>
+        <footer></footer>
+    </body>
+</html>
